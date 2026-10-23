@@ -6,6 +6,7 @@ const cours = [
     format: "Cours en petit groupe",
     planning: "Planning auprès de l'académie",
     tarif: "Tarif à confirmer",
+      prix:' 350 MAD /mois',
     disponibilite: "Places disponibles",
     disponible: true,
     icone: "calculatrice",
@@ -18,6 +19,7 @@ const cours = [
     format: "Cours en petit groupe",
     planning: "Planning auprès de l'académie",
     tarif: "Tarif à confirmer",
+     prix:' 450 MAD /mois',
     disponibilite: "Places disponibles",
     disponible: true,
     icone: "livre",
@@ -30,6 +32,7 @@ const cours = [
     format: "Cours en petit groupe",
     planning: "Planning auprès de l'académie",
     tarif: "Tarif à confirmer",
+     prix:' 250 MAD /mois',
     disponibilite: "Places disponibles",
     disponible: true,
     icone: "globe",
@@ -42,6 +45,7 @@ const cours = [
     format: "Cours en petit groupe",
     planning: "Planning auprès de l'académie",
     tarif: "Tarif à confirmer",
+     prix:' 150 MAD /mois',
     disponibilite: "Places disponibles",
     disponible: true,
     icone: "livre",
@@ -54,6 +58,7 @@ const cours = [
     format: "Cours en petit groupe",
     planning: "Planning auprès de l'académie",
     tarif: "Tarif à confirmer",
+     prix:' 350 MAD /mois',
     disponibilite: "Places disponibles",
     disponible: true,
     icone: "feuille",
@@ -66,10 +71,89 @@ const cours = [
     format: "Cours en petit groupe",
     planning: "Planning auprès de l'académie",
     tarif: "Tarif à confirmer",
+     prix:' 450 MAD /mois',
     disponibilite: "Places disponibles",
     disponible: true,
     icone: "ordinateur",
     couleur: "#A855F7",
+  },
+   {
+    id: 7,
+    matiere: "Informatique",
+    niveau: "1ème année collège",
+    format: "Cours en petit groupe",
+    planning: "Planning auprès de l'académie",
+    tarif: "Tarif à confirmer",
+     prix:' 250 MAD /mois',
+    disponibilite: "Places disponibles",
+    disponible: true,
+    icone: "ordinateur",
+    couleur: "#A855F7",
+  },
+    {
+    id: 8,
+    matiere: "SVT",
+    niveau:"1ème année collège" ,
+    format: "Cours en petit groupe",
+    planning: "Planning auprès de l'académie",
+    tarif: "Tarif à confirmer",
+     prix:' 150 MAD /mois',
+    disponibilite: "Places disponibles",
+    disponible: true,
+    icone: "feuille",
+    couleur: "#22C55E",
+  },
+   {
+    id: 9,
+    matiere: "Arabe",
+    niveau: "3ème année collège",
+    format: "Cours en petit groupe",
+    planning: "Planning auprès de l'académie",
+    tarif: "Tarif à confirmer",
+     prix:' 350 MAD /mois',
+    disponibilite: "Places disponibles",
+    disponible: true,
+    icone: "livre",
+    couleur: "#06B6D4",
+  },
+   {
+    id: 10,
+    matiere: "Mathematiques",
+    niveau: "2ème année bac",
+    format: "Cours en petit groupe",
+    planning: "Planning auprès de l'académie",
+    tarif: "Tarif à confirmer",
+     prix:' 350 MAD /mois',
+    disponibilite: "Places disponibles",
+    disponible: true,
+    icone: "calculatrice",
+    couleur: "#3B82F6",
+  },
+  {
+    id: 11,
+    matiere: "Français",
+    niveau: "1ème année bac",
+    format: "Cours en petit groupe",
+    planning: "Planning auprès de l'académie",
+    tarif: "Tarif à confirmer",
+     prix:' 350 MAD /mois',
+    disponibilite: "Places disponibles",
+    disponible: true,
+    icone: "livre",
+    couleur: "#8B5CF6",
+  },
+  {
+    id: 12,
+    matiere: "Anglais",
+    niveau: "Tronc commun",
+    format: "Cours en petit groupe",
+    planning: "Planning auprès de l'académie",
+    tarif: "Tarif à confirmer",
+     prix:' 350 MAD /mois',
+    disponibilite: "Places disponibles",
+    disponible: true,
+    icone: "globe",
+    couleur: "#10B981",
   },
 ];
 
@@ -108,12 +192,13 @@ function afficherCours(listeCours) {
             </div>
 
             <h3 class="course-price">${cours.tarif}</h3>
+             <h3 class="course-price">${cours.prix}</h3>
 
             <p class="availability">
                 ${cours.disponibilite}
             </p>
 
-            <a href="#" class="details-btn">Détails</a>
+            <a href="#" class="Ajouter-btn">Ajouter</a>
         `;
 
     catalogue.appendChild(carte);
@@ -165,6 +250,9 @@ niveauSelect.addEventListener("change", filtrerCours);
 matiereSelect.addEventListener("change", filtrerCours);
 
 afficherCours(cours);
+const coursAjoutes = new Array("Mathematiques", "Français", "Anglais","Arabe","SVT","Informatique");
 
+function AjouterCours(coursAjouter) {
 
-
+  
+}

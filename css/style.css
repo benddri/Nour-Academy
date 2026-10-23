@@ -1,38 +1,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
-:root {
-  /* Couleurs principales */
-  --color-primary: #064b8d;
-  --color-primary-dark: #073568;
-  --color-primary-light: #eaf4fc;
 
-  /* Couleur secondaire */
-  --color-secondary: #ffc533;
-  --color-secondary-hover: #f2b91f;
 
-  /* Backgrounds */
-  --color-background: #f2f7fc;
-  --color-surface: #ffffff;
-
-  /* Textes */
-  --color-text: #12345a;
-  --color-text-secondary: #60758d;
-
-  /* États */
-  --color-success: #16a36a;
-  --color-error: #dc3545;
-  --color-border: #d9e5f0;
-
-  /* Border radius */
-  --radius-sm: 6px;
-  --radius-md: 12px;
-  --radius-lg: 18px;
-
-  /* Ombres */
-  --shadow-card: 0 4px 15px rgba(6, 75, 141, 0.08);
-  --font-heading: "Poppins", sans-serif;
-  --font-body: "Inter", sans-serif;
-}
 body,
 html{
     display: block;
@@ -59,7 +28,7 @@ nav{
   color: var(--couleur-thym-fonce);
   text-decoration: none;
 }
-.btn{
+#btn{
 padding: 4px 20px;
 background-color: #ffc533 ;
 color: #12345a ;
@@ -69,6 +38,14 @@ text-decoration: none;
 padding-top: 10px;
 border-radius: 20px;
 }
+
+.course-price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #1e40af;
+  margin: 20px 0;
+}
+
 .logo img{
   max-width: 44px;
 }
@@ -147,7 +124,7 @@ font-size: medium;
     justify-content: center;
     font-size: 30px;
 }
-.details-btn {
+.Ajouter-btn {
     display: block;
     width: 80%;
     background: linear-gradient(135deg, #304edb, #1455b8);
@@ -161,7 +138,7 @@ font-size: medium;
     
 }
 
-.details-btn:hover {
+.Ajouter-btn:hover {
     background: #173da8;
 
 }
