@@ -35,18 +35,7 @@ nav{
   height: 40px;
 }
 
-#cart-count {
-  background: #f59e0b;
-  color: white;
-  font-size: 12px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-}
+
 
 .filters{
   display: flex;
@@ -168,14 +157,14 @@ nav{
   background: #94a3b8;
   cursor: not-allowed;
 }
-.champ{
+.formulaire{
   display:flex ;
   flex-direction: column;
   margin: 10%;
   gap:20px;
   font-size: large;
 }
-.champ >input{
+.formulaire >input{
   width: 80%;
   height: 50px;
 align-items: center;
@@ -184,14 +173,14 @@ justify-content: center;
   font-size: large;
   border-radius: 10px;
 }
-.champ >select{
+.formulaire>select{
    width: 80%;
   padding: 20px;
  font-size: large;
   border-radius: 10px;
 }
-.champ #chek{
-  font-size: large;
+.formulaire#chek{
+  font-size: large; 
 }
 .panier {
   background: white;

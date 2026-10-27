@@ -160,6 +160,10 @@ const niveauSelect = document.getElementById("niv");
 const matiereSelect = document.getElementById("mat");
 const listePanier = document.getElementById("liste-panier");
 const prixTotalElement = document.getElementById("prix-total");
+const btnInscription = document.querySelector(".btn-inscription");
+const containerFormulaire = document.getElementById("container-formulaire");
+const btnValider = document.querySelector(".btn-valider");
+
 
 let panier = [];          // tableau de les cours ajoutés
 let total = 0; //somme des prix
@@ -294,14 +298,6 @@ function mettreAjourPanier() {
 }
 
 
-
-
-  
-
-
-
-
-//_+++++++++++++++++++++++++++++++++++++++++++++++++++
 searchInput.addEventListener("input", filtrerCours);
 niveauSelect.addEventListener("change", filtrerCours);
 matiereSelect.addEventListener("change", filtrerCours);
@@ -322,5 +318,55 @@ listePanier.addEventListener("click", function (e) {
   const id = parseInt(bouton.dataset.id);
   supprimerDuPanier(id);
 });
+btnInscription.addEventListener("click",function(){
+    containerFormulaire.innerHTML=`<form class="formulaire" id="container-formulaire">
+
+  <label for="nom">Nom du parent :</label>
+  <input type="text" id="nom" name="nom" required>
+
+  <label for="email">Email :</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="tel">Téléphone :</label>
+  <input type="tel" id="tel" name="telephone" required>
+
+  <label for="niv">Niveau de l'élève :</label>
+  <select id="niv" name="niveau" required>
+    <option value="">Choisir un niveau</option>
+    <option value="1ac">1ère année collège</option>
+    <option value="2ac">2ème année collège</option>
+    <option value="3ac">3ème année collège</option>
+    <option value="tc">Tronc commun</option>
+    <option value="1bac">1ère année bac</option>
+    <option value="2bac">2ème année bac</option>
+  </select>
+
+  <label for="Password">Password :</label>
+  <input type="password" id="Password" name="password" required>
+
+  <label for="consentement">
+    <input
+      type="checkbox"
+      id="consentement"
+      name="consentement"
+      required
+    >
+    J'accepte que mes données soient utilisées pour l'inscription
+  </label>
+
+  <button type="submit" class="btn-valider">
+    Valider l'inscription
+  </button>
+
+</form>
+  
+  
+  `
+
+
+});
+
+
+
 
 afficherCours(cours);
